@@ -1,3 +1,7 @@
+# タグを追加
+tag @s add balloon_parrot
+
+
 # オウムのデータを設定
 data modify entity @s leash.UUID set from storage balloon_eggs:buffer owner_uuid
 data modify entity @s Silent set value true
@@ -16,5 +20,5 @@ effect give @s health_boost infinite 99 true
 # アイテムディスプレイをマウント
 tag @s add noItem
 data modify storage balloon_eggs:buffer parrot_uuid set from entity @s UUID
-execute at @s summon item_display run function balloon_eggs:set_item_data
+execute at @s summon item_display run function balloon_eggs:balloon/set_item_data
 tag @s remove noItem
