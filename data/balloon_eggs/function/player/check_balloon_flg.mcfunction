@@ -7,8 +7,8 @@ execute if score @s balloon_eggs_balloon_flg matches -1 unless predicate balloon
 
 # マクロでbuffer内のデータをUUIDごとに保存する
 # バルーンの召喚
-execute if score @s balloon_eggs_balloon_flg matches 1 at @s positioned ~ ~2 ~ run function balloon_eggs:player/spawn_hundled_ballon
+execute if score @s balloon_eggs_balloon_flg matches 1 at @s positioned ~ ~2 ~ run function balloon_eggs:player/spawn_hundled_balloon
 
 
 # スコアの初期化
-execute if score @s balloon_eggs_balloon_flg matches ..-2147483648 if score @s balloon_eggs_balloon_flg matches 2147483647.. run scoreboard players set @s balloon_eggs_balloon_flg 0
+execute unless score @s balloon_eggs_balloon_flg matches -2147483648..2147483647 run scoreboard players set @s balloon_eggs_balloon_flg 0

@@ -1,0 +1,1 @@
+$execute as @e[distance=..10, limit=1, tag=balloon_item, scores={balloon_eggs_balloon_id=$(kill_id)}] at @s run function balloon_eggs:balloon/kill_passenger with entity @s item

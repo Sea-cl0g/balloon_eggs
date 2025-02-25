@@ -1,3 +1,14 @@
-# 風船の紐づけUUIDを設定
+# タグを追加
+tag @s add balloon_item
+
+
+# idを設定
+$scoreboard players set @s balloon_eggs_balloon_id $(parrot_id)
+
+
+# アイテムのデータを設定
 data modify entity @s item set from storage balloon_eggs:buffer owner_handled_item
-ride @s mount @e[limit=1, sort=nearest, distance=..0.1, type=parrot, tag=noItem]
+
+
+# オウムに騎乗
+$ride @s mount @e[limit=1, distance=..0.1, scores={balloon_eggs_balloon_id=$(parrot_id)}, sort=nearest, type=parrot]
