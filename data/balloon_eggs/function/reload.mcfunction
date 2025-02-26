@@ -16,4 +16,7 @@ scoreboard players set max balloon_eggs_balloon_life_timer 60
 
 kill @e[type=!player]
 
-say balloon_eggs has loaded!!
+tellraw @a {"text":"balloon_eggs has loaded!","bold":true,"color":"green"}
+
+
+# https://github.com/Sea-cl0g/balloon_eggs by boo_manKnow
