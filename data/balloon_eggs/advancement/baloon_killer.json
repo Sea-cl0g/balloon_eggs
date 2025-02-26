@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "hitted_attack": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "taken": {
+            "min": 4
+          }
+        },
+        "entity": {
+          "nbt": "{Tags:[\"balloon_parrot\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "balloon_eggs:preset/score_add"
+  }
+}
