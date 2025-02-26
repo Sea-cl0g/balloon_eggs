@@ -8,6 +8,7 @@ $scoreboard players set @s balloon_eggs_balloon_id $(parrot_id)
 
 # アイテムのデータを設定
 data modify entity @s item set from storage balloon_eggs:buffer owner_handled_item
+data modify entity @s billboard set value vertical
 
 
 # オウムに騎乗
