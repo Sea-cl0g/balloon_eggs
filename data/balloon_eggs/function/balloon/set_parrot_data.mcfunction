@@ -17,6 +17,7 @@ attribute @s minecraft:max_health base set 1024
 execute store result entity @s Health double 1 run scoreboard players get max balloon_eggs_balloon_health
 ##その他
 data modify entity @s Silent set value true
+data modify entity @s PersistenceRequired set value true
 effect give @s invisibility infinite 0 true
 effect give @s levitation infinite 0 true
 ##死亡対策
