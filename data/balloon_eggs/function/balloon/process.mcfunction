@@ -10,6 +10,11 @@ execute if entity @s[nbt=!{leash:{}}] run effect give @s levitation infinite 4 t
 execute if entity @s[nbt={leash:{}}] run scoreboard players operation @s balloon_eggs_balloon_life_timer = max balloon_eggs_balloon_life_timer
 
 
-effect give @s levitation infinite 0 true
-# kill
+# 4以上の攻撃を受けた場合
+execute store result score @s balloon_eggs_balloon_health run data get entity @s Health
+scoreboard players operation @s balloon_eggs_balloon_health -= max balloon_eggs_balloon_health
+execute if score @s balloon_eggs_balloon_health matches ..-4 run function balloon_eggs:balloon/safe_kill
+
+
+# 手放されて時間がたった
 execute if entity @s[nbt=!{leash:{}}] if score @s balloon_eggs_balloon_life_timer matches ..0 run function balloon_eggs:balloon/safe_kill
