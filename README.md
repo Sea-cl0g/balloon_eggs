@@ -16,9 +16,12 @@
 ![tying](https://github.com/user-attachments/assets/430e7d89-3205-4b31-924a-b0cd2b5cbd8b)
 
 - ### 叩く！割る！
-風船を攻撃すると、風船を叩くことができます。ただし一定以上の攻撃力で風船を叩くと風船は割れてしまいます。
+風船を攻撃すると、風船を叩くことができます。
 
 ![touch](https://github.com/user-attachments/assets/5e5ccf86-75e1-40a5-8a98-b6c7c6860d2c)
+
+ただし一定以上の攻撃力で風船を叩くと風船は割れてしまいます。
+
 ![attack](https://github.com/user-attachments/assets/3afba9b3-4419-4c11-b804-37100158c02b)
 
 - ### 風船を手放そう
@@ -26,8 +29,11 @@
 
 ![balloon](https://github.com/user-attachments/assets/cc9d328b-7934-4ea4-a0ab-2610a85245e4)
 
+- ### おまけ
 
+風船を割った回数はスコアボードpopped_balloonsにカウントされます。
 
+![score](https://github.com/user-attachments/assets/1a373e04-5966-4b40-b858-bc8e28faa28b)
 
 <br>
 
