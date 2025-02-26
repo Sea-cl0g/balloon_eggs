@@ -13,8 +13,7 @@ data modify entity @s leash.UUID set from storage balloon_eggs:buffer owner_uuid
 ##ドロップアイテムの無効化
 data modify entity @s DeathLootTable set value "balloon_eggs:empty_table"
 ##最大体力の設定
-data modify entity @s attributes prepend value {base:25.0d,id:"minecraft:max_health"}
-execute store result entity @s attributes[0].base double 1 run scoreboard players get max balloon_eggs_balloon_health
+attribute @s minecraft:max_health base set 1024
 execute store result entity @s Health double 1 run scoreboard players get max balloon_eggs_balloon_health
 ##その他
 data modify entity @s Silent set value true
