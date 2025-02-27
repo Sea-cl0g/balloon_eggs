@@ -7,4 +7,4 @@ execute if score @s balloon_eggs_balloon_flg matches 1 at @s positioned ~ ~2 ~ r
 
 
 # プレイヤーにエフェクトを追加
-execute if score @s balloon_count matches 1.. as @a run function balloon_eggs:player/balloon_effect
+execute if score effects balloon_eggs_settings matches 1 if score @s balloon_count matches 1.. as @a run function balloon_eggs:player/balloon_effect
