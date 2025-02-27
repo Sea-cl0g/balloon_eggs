@@ -16,5 +16,9 @@ scoreboard players operation @s balloon_eggs_balloon_health -= max balloon_eggs_
 execute if score @s balloon_eggs_balloon_health matches ..-4 run function balloon_eggs:balloon/safe_kill
 
 
+# 装着した風船の数を数える
+execute if data entity @s leash.UUID run function balloon_eggs:balloon/balloon_count_add with entity @s leash
+
+
 # 紐から外れて時間がたった
 execute unless data entity @s leash if score @s balloon_eggs_balloon_life_timer matches ..0 run function balloon_eggs:balloon/safe_kill

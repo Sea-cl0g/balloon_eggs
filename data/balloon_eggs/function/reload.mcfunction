@@ -1,7 +1,9 @@
 # プレイヤー
 ##風船の召喚用
 scoreboard objectives add balloon_eggs_balloon_flg dummy
-##おまけ機能
+##装着した風船の数
+scoreboard objectives add balloon_count dummy
+##風船を割った回数
 scoreboard objectives add popped_balloons dummy
 
 
