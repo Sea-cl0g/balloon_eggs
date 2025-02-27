@@ -24,16 +24,36 @@
 
 ![attack](https://github.com/user-attachments/assets/3afba9b3-4419-4c11-b804-37100158c02b)
 
+- ### ふわふわ！
+
+一定数以上の風船を持つと、空を飛んだり落下ダメージを軽減したりすることができます。
+
+![fly2](https://github.com/user-attachments/assets/f506dae1-5e3e-4fc2-ae5d-2e1392fb77ec)
+
+
 - ### 風船を手放そう
 紐のついた風船を右クリックすると、それを手放すことができます。
 
 ![balloon](https://github.com/user-attachments/assets/cc9d328b-7934-4ea4-a0ab-2610a85245e4)
 
-- ### おまけ
+<br>
 
-風船を割った回数はスコアボードpopped_balloonsにカウントされます。
+## ⚙️技術仕様
 
-![score](https://github.com/user-attachments/assets/1a373e04-5966-4b40-b858-bc8e28faa28b)
+風船を割った回数はスコアボード```popped_balloons```にカウントされます。
+
+![popped_balloons](https://github.com/user-attachments/assets/c95fe143-300b-4052-919f-821a1d5b6e52)
+
+装着した風船の個数はスコアボード```ballon_count```に集計されます
+
+![balloon_count](https://github.com/user-attachments/assets/25923d3b-f79d-4614-a7eb-870e667a2225)
+
+
+~~以下のような項目は、/function balloon_eggs:settingsコマンドで表示される設定メニューで変更できます~~。また、```/function balloon_eggs:settings/```で始まるコマンドを使用すれば、直接設定を変更することも可能です。
+
+| 項目名 | 説明 | コマンド |
+|:---:|:---:|:---:|
+|effect|複数のバルーンを持った時にプレイヤーに効果を与えるかどうか|```/function balloon_eggs:settings/tgl_effects```|
 
 <br>
 
