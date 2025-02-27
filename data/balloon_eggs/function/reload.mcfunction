@@ -16,6 +16,7 @@ scoreboard objectives add balloon_eggs_balloon_life_timer dummy
 scoreboard players set max balloon_eggs_balloon_life_timer 60
 
 
+# リロードメッセージ
 tellraw @a {"text":"balloon_eggs has loaded!","bold":true,"color":"green"}
 
 

@@ -20,9 +20,5 @@ execute if score @s balloon_eggs_balloon_health matches ..-4 run function balloo
 execute if data entity @s leash.UUID run function balloon_eggs:balloon/balloon_count_add with entity @s leash
 
 
-# オーナーにエフェクトを与える
-execute if data entity @s leash.UUID run function balloon_eggs:balloon/effect_add_owener_find with entity @s leash
-
-
 # 紐から外れて時間がたった
 execute unless data entity @s leash if score @s balloon_eggs_balloon_life_timer matches ..0 run function balloon_eggs:balloon/safe_kill
