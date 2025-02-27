@@ -20,6 +20,8 @@ scoreboard players set max balloon_eggs_balloon_life_timer 60
 scoreboard objectives add balloon_eggs_settings dummy
 scoreboard players set 2 balloon_eggs_settings 2
 execute unless score effects balloon_eggs_settings matches -2147483648..2147483647 run scoreboard players set effects balloon_eggs_settings 1
+execute unless score sneak_to_spawn balloon_eggs_settings matches -2147483648..2147483647 run scoreboard players set sneak_to_spawn balloon_eggs_settings 1
+
 
 
 # リロードメッセージ
